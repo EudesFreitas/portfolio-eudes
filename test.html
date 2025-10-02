@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+    <style>
+  body {
+    color: white;
+    background-color: black;
+    padding: 0px 30px;
+  }
+  header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+  }
+  a.menu {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  gap: 20px;
+  font-weight: bold;
+  transition: all 0.3s ease; /* deixa suave */
+  }
+  a.menu:hover {
+  color: #ff9800;
+  transform: translateY(-3px); /* sobe 3px */
+}
+  nav {
+  display: flex;/* coloca os itens em linha */
+  gap: 15px;/* espaço entre os links */
+  padding-right: 40px;
+  text-shadow: 2px 2px 3px rgb(160, 157, 157);
+  }
+  /*nav a {
+  margin: 0 10px;  10px de espaço à esquerda e à direita }*/
+  h1 {
+  margin: 0;
+  text-align: left;/* força alinhamento do texto */
+  text-shadow: 2px 2px 3px rgb(160, 157, 157);
+  font-size: 35px;
+  }
+  h2 {
+    font-size: 25px;
+    text-shadow: 2px 2px 3px rgb(160, 157, 157);
+  }
+  main {  
+  padding-top: 140px;
+  padding-bottom: 20px;
+  margin-right: 0px;
+  }
+  p {
+  text-align: justify;
+  max-width: 800px;   /* largura máxima do parágrafo */
+  line-height: 1.6;   /* melhora a leitura */
+  padding: 0 px;    /* respiro nas laterais em telas pequenas */
+  }
+  .logos {
+  display: flex; /* coloca na mesma linha */
+  gap: 20px; /* espaço entre elas */
+  padding-top: 90px;
+  margin: auto;
+  }
+  .logo img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;/* mantém a proporção sem esticar */
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  box-shadow: 2px 2px 3px rgb(160, 157, 157);
+  border-radius: 50%;  /* mantém redonda (caso a imagem não seja) */
+  border: 1px rgba(11, 9, 9, 0.897);
+  border-style: solid;
+  object-fit: cover;   /* garante que a imagem não deforme */
+}
+.logos img:hover {
+  transform: translate(-6px, -6px);
+  box-shadow: 5px 5px 10px rgb(174, 164, 164);
+  transition: transform 1s, border 1s;
+}
+footer {
+    text-align: center;
+    padding-top: 100px;
+}
+@media (max-width: 735px){
+  footer {
+    padding: 55px
+  }
+
+}
+/* Quando a tela for menor que 600px → empilha */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;   /* coloca h1 em cima, nav embaixo */
+    /*align-items: center;/* centraliza tudo */
+  }
+
+  h1 {
+    margin-bottom: 10px; /* espaço entre o título e o menu */
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap; /* permite quebrar links se necessário */
+    justify-content: center;
+  }
+
+  nav a {
+    margin: 5px;
+  }
+  footer {
+    padding: 0px
+  }
+}
+    </style>
+</head>
+<body>
+    <header>
+    <h1>Eudes Freitas</h1>
+    <nav>
+      <a href="#" class="menu">Home</a>
+      <a href="#" class="menu">About</a>
+      <a href="#" class="menu">Projects</a>
+      <a href="#" class="menu">Contacts</a>
+    </nav>
+  </header>
+  <main>
+      <h2>Hi!</h2>
+      <br>
+      <p>Sou Eudes, tenho 40 anos e estou em transição de carreira para a área de desenvolvimento de software. <br>Após uma trajetória sólida no universo do cinema, onde trabalhei por muitos anos com criatividade, produção e narrativa, estou agora direcionando minha paixão por resolver problemas e criar soluções para o mundo da tecnologia. <br> Estou estudando desenvolvimento de software com foco em construir sistemas que façam a diferença na vida das pessoas, unindo lógica, inovação e experiência de vida.</p>
+      <div class="logos"> 
+          <a href="https://github.com/EudesFreitas" class="logo" target="_blank"><abbr title="github"><img src= "icons/icons8-github-48.png" alt="logo github"></abbr>
+          </a>
+          <a href="#" class="logo"><img src="icons/icons8-linkedin-64.png" alt="logo linkedin">
+          </a>
+          <a href="#" class="logo"><img src="icons/cv-64.png" alt="curriculo">
+          </a>
+      </div>
+      <!-- #8E9DA8 Cor das logos-->
+    </main>
+    <footer>
+        &copy; 2025 Eudes Freitas
+    </footer>
+</body>
+</html>
