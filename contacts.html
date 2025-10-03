@@ -5,56 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contatos</title>
     <style>
-         header {
-
-        }
-        a {
-            text-decoration: none;
-            color: white;
-            margin: 5px;
-            
-        }
-
-        a:hover {
-            text-decoration: none;
-        }
-
-        nav {
-            margin-left: 300px;
-        }
-
-        h1 {
-            font-family: Arial, Helvetica, sans-serif;
-            margin-left: 300px;
-        }
         body {
             color: white;
             background-color: black;
+            padding: 0px 30px;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0px;
+        }
+        a.menu {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            gap: 20px;
+            font-weight: bold;
+            transition: all 0.3s ease; /* deixa suave */
+        }
+        a.menu:hover {
+            color: #ff9800;
+            transform: translateY(-3px); /* sobe 3px */
+        }
+        nav {
+            display: flex;/* coloca os itens em linha */
+            gap: 15px;/* espaço entre os links */
+            padding-right: 40px;
+            text-shadow: 2px 2px 3px rgb(160, 157, 157);
+        }
+            /*nav a {
+            margin: 0 10px;  10px de espaço à esquerda e à direita }*/
+        h1 {
+            margin: 0;
+            text-align: left;/* força alinhamento do texto */
+            text-shadow: 2px 2px 3px rgb(160, 157, 157);
+            font-size: 35px;
         }
        .contact {
-            margin-left: 300px;
-            background: black;
+            text-align: left;
+            margin: 0;
             padding-top: 90px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
+        }
+        .contact a {
+            color: white;
+            text-decoration: none;
+        }
+        footer {
+        text-align: center;
+        padding-top: 100px;
+        font-size: small;
+        }
+        @media (max-width: 600px) {
+            header {
+    flex-direction: column;   /* coloca h1 em cima, nav embaixo */
+    /*align-items: center;/* centraliza tudo */
+  }
+
+  h1 {
+    margin-bottom: 10px; /* espaço entre o título e o menu */
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: nowrap; /* permite quebrar links se necessário */
+    justify-content: center;
+  }
+
+  nav a {
+    margin: 5px;
+  }
+  footer {
+    padding-top: 60px;
+  }
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Eudes Freitas</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="#">About</a>
-            <a href="#">Projects</a>
-            <a href="#">Contacts</a>
+            <a href="index.html" class="menu">Home</a>
+            <a href="#" class="menu">About</a>
+            <a href="#" class="menu">Projects</a>
+            <a href="#" class="menu">Contacts</a>
         </nav>
     </header>
     <div class="contact">
-      <p>📍 Fortaleza, Ceará</p>
-      <p>📞 85 996947172</p>
-      <p>✉️ eudes.fcine@gmail.com</p>
-      <p>💻<a href="https://github.com/EudesFreitas">GitHub</a></p>
+      <p>📍&nbsp; Fortaleza, Ceará</p>
+      <p>📞 &nbsp;85 996947172</p>
+      <p>✉️ &nbsp;eudes.fcine@gmail.com</p>
+      <p>💻 &nbsp;<a href="https://github.com/EudesFreitas">GitHub</a></p>
     </div>
+    <footer>
+        &copy; 2025 Eudes Freitas
+    </footer>
 </body>
 </html>
