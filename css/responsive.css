@@ -1,0 +1,42 @@
+@media (max-width: 768px){  /*735*/
+  footer {
+    padding: 55px
+  }
+
+}
+/* Quando a tela for menor que 600px → empilha */
+@media (max-width: 600px) {
+  body {
+    margin: 0px 34px;
+  }
+  header {
+    flex-direction: column;   /* coloca h1 em cima, nav embaixo */
+    /*align-items: center;/* centraliza tudo */
+  }
+
+  h1 {
+    margin-bottom: 10px; /* espaço entre o título e o menu */
+  }
+
+  nav {
+    display: flex;
+    gap: 6px;
+    flex-wrap: nowrap; /* permite quebrar links se necessário */
+    /*justify-content: ;*/
+  }
+
+  nav a {
+    margin: 5px;
+  }
+  main {
+    padding-top: 0px;
+    /*padding-top: 55px;*/
+  }
+  .logos {
+    padding-top: 4px;
+    /*padding-top: 40px;*/
+  }
+  footer {
+    padding: 53px
+  }
+}
