@@ -1,12 +1,31 @@
- @charset "UTF-8";
+  @charset "UTF-8";
+/* trabalhando mudança de temas*/
+ :root {
+  --bg-color: #ffffff;
+  --text-color: #222222;
+  --header-bg: #f4f4f4;
+}
+
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --header-bg: #1e1e1e;
+}
+
+
+
  
  body {
-    color: white;
-    background-color: black;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: 0.3s;
+    /*color: white;
+    background-color: black;*/
     padding: 0px 30px;
     margin: 0px 120px;
   }
   header {
+    /*background-color: var(--header-bg);
   /*display: flex;*/
   justify-content: space-between;
   align-items: center;
@@ -15,7 +34,9 @@
   }
   a.menu {
   text-decoration: none;
-  color: white;
+  color: var(--text-color);
+  transition: 0.3s;
+  /*color: white; */
   font-size: 18px;
   gap: 20px;
   font-weight: bold;
@@ -31,6 +52,19 @@
   padding-right: 3px;
   text-shadow: 2px 2px 3px rgb(160, 157, 157);
   }
+
+  #toggleTheme {
+  background: none;        /* tira fundo */
+  border: none;            /* tira borda */
+  font-size: 26px;         /* aumenta tamanho */
+  cursor: pointer;         /* muda cursor */
+  margin-left: 50px;       /* separa do menu */
+  transition: transform 0.2s ease;
+}
+
+#toggleTheme:hover {
+  transform: scale(1.2);   /* efeito ao passar mouse */
+}
   /*nav a {
   margin: 0 10px;  10px de espaço à esquerda e à direita }*/
   h1 {
