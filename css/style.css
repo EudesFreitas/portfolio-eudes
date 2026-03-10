@@ -102,7 +102,7 @@
   cursor: pointer;
   box-shadow: 2px 2px 3px rgb(160, 157, 157);
   border-radius: 50%;  /* mantém redonda (caso a imagem não seja) */
-  border: 1px rgba(11, 9, 9, 0.897);
+  border: 1px rgba(11, 9, 9, 0.406);
   border-style: solid;
   object-fit: cover;   /* garante que a imagem não deforme */
 }
