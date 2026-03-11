@@ -55,11 +55,11 @@ button2.addEventListener("click", () => {
 
   if (currentLanguage === "pt") {
     changeLanguage("en");
-    button2.textContent = "🇬🇧";
+    button2.textContent = "EN";
     currentLanguage = "en";
   } else {
     changeLanguage("pt");
-    button2.textContent = "🇧🇷";
+    button2.textContent = "PT-BR";
     currentLanguage = "pt";
   }
 

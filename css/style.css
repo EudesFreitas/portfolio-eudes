@@ -69,8 +69,9 @@
 
 #languageToggle {
   background: none;        /* tira fundo */
+  color: var(--text-color);
   border: none;            /* tira borda */
-  font-size: 23px;         /* aumenta tamanho */
+  font-size: 10px;         /* aumenta tamanho */
   cursor: pointer;         /* muda cursor */
   margin-left: 20px;       /* separa do menu */
   transition: transform 0.2s ease;
