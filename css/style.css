@@ -70,7 +70,7 @@
 #languageToggle {
   background: none;        /* tira fundo */
   color: var(--text-color);
-  font-family: Time;
+  font-family: 'Times New Roman', Times, serif;
   text-shadow: 2px 2px 3px rgb(160, 157, 157);
   border: none;            /* tira borda */
   font-size: 10px;         /* aumenta tamanho */
