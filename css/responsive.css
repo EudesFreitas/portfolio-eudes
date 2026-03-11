@@ -28,15 +28,24 @@
   nav a {
     margin: 5px;
   }
+
+  #toggleTheme {
+    margin-left: 10px;
+  }
+
+  #languageToggle {
+    margin-left: 10px;
+  }
   main {
     padding-top: 0px;
     /*padding-top: 55px;*/
   }
   .logos {
-    padding-top: 4px;
-    /*padding-top: 40px;*/
+    padding-top: 15px;
+    /*padding-top: 4px;*/
   }
   footer {
-    padding: 53px
+    /*padding: 53px*/
+    padding: 25px;
   }
 }
