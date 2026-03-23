@@ -15,18 +15,18 @@ const button = document.getElementById("toggleTheme");
 
   pt: {
     title: "Eudes Freitas",
-    home: "Início",
-    about: "Sobre",
-    projects: "Projetos",
+    INÍCIO: "INÍCIO",
+    SOBRE: "SOBRE",
+    PROJETOS: "PROJETOS",
     greeting: "Olá!",
     aboutText: "Sou Eudes, tenho 41 anos e estou em transição de carreira para a área de desenvolvimento de software. Após uma trajetória sólida no universo do cinema, onde trabalhei por muitos anos com criatividade, produção e narrativa, estou agora direcionando minha paixão por resolver problemas e criar soluções para o mundo da tecnologia. Estou estudando desenvolvimento de software com foco em construir sistemas que façam a diferença na vida das pessoas, unindo lógica, inovação e experiência de vida."
   },
 
   en: {
     title: "Eudes Freitas",
-    home: "Home",
-    about: "About",
-    projects: "Projects",
+    INÍCIO: "HOME",
+    SOBRE: "ABOUT",
+    PROJETOS: "PROJECTS",
     greeting: "Hi!",
     aboutText: "I’m Eudes, I’m 41 years old and currently transitioning my career into software development. After a solid journey in the film industry, where I worked for many years with creativity, production, and storytelling, I am now directing my passion for solving problems and creating solutions toward the world of technology. I am studying software development with the goal of building systems that make a difference in people's lives, combining logic, innovation, and life experience."
 

@@ -16,7 +16,7 @@ a.menu {
 
   .nav{
     position: absolute;
-    top: 69px;
+    top: 75px;
     right: 0;
     
     /*background: #111;*/
@@ -29,6 +29,7 @@ a.menu {
 
   .nav.active{
     display: flex;
+    align-items: start;
   }
 }
 
@@ -75,6 +76,7 @@ footer {
     gap: 13px;
     flex-wrap: nowrap; /* permite quebrar links se necessário */
     /*justify-content: ;*/
+    margin-right: -62px
   }
 
   nav a {
@@ -133,6 +135,7 @@ footer {
     gap: 0px;
     flex-wrap: nowrap; /* permite quebrar links se necessário */
     /*justify-content: ;*/
+    margin-right: -62px
   }
 
   nav a {
@@ -165,3 +168,15 @@ footer {
     /*padding: 25px;*/
   }
 }
+
+
+
+#toggleTheme
+padding-top: 6px;
+
+
+#languageToggle 
+    padding-top: 10px;
+
+.nav, .header-buttons {
+    align-items: start;
