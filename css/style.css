@@ -21,17 +21,36 @@
     transition: 0.3s;
     /*color: white;
     background-color: black;*/
-    padding: 0px 30px;
-    margin: 0px 120px;
+    padding: 0px 0px;
+    margin: 0px 20px;
   }
   header {
-    /*background-color: var(--header-bg);
-  /*display: flex;*/
+  /*
   justify-content: space-between;
   align-items: center;
   padding: 10px 0px;
-  margin: auto;
+  margin: auto; */
+
+  display: flex;
+  flex-direction: column; /* empilha (título em cima) */
+  gap: 10px;
+
+  justify-content: space-between;
+  align-items: ;
+  padding-top: 20px;
   }
+
+  /* agrupar os botões */
+  .header-buttons {
+  display: flex;
+  gap: 38px; /* espaço entre os botões */
+}
+  /*
+  .menu{
+  text-decoration: none;
+  color: inherit;
+}
+  */
   a.menu {
   text-decoration: none;
   color: var(--text-color);
@@ -46,11 +65,24 @@
   color: #ff9800;
   transform: translateY(-3px); /* sobe 3px */
 }
-  nav {
-  display: flex;/* coloca os itens em linha */
-  gap: 15px;/* espaço entre os links */
-  padding-right: 3px;
-  text-shadow: 2px 2px 3px rgb(160, 157, 157);
+
+/* botão hamburguer escondido no desktop */
+.menu-toggle{
+  display: none;
+  font-size: 28px;
+  color: #ff9800;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+  .nav {
+  /*display: flex;/* coloca os itens em linha */
+  /*gap: 15px;/* espaço entre os links */
+  /*padding-right: 3px;
+  text-shadow: 2px 2px 3px rgb(160, 157, 157); */
+  display: flex;
+  gap: 20px;
+  align-items: center;
   }
 
   #toggleTheme {
@@ -80,6 +112,23 @@
 }
 #languageToggle:hover {
   transform: scale(1.2);   /* efeito ao passar mouse */
+}
+
+/* cria uma linha só para menu + botões */
+.nav,
+.header-buttons {
+  display: flex;
+  align-items: center;
+  
+}
+
+/* container para alinhar menu e botões */
+.header-bottom {
+  display: flex;
+  justify-content: flex-start; /* space-between separa os dois lados */
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
 }
 
   /*nav a {
@@ -133,3 +182,32 @@ footer {
     padding-top: 100px;
     font-size: 11px;
 }
+
+
+/* header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+nav{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.menu{
+  text-decoration: none;
+  color: inherit;
+}
+
+/* botão hamburguer escondido no desktop */
+/*
+.menu-toggle{
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+} */
