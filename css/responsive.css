@@ -22,7 +22,7 @@ a.menu {
     /*background: #111;*/
     flex-direction: column;
     width: 200px;
-    gap: 0px;
+    gap: 15px;
     padding: 20px;
     display: none;
   }
@@ -120,10 +120,12 @@ footer {
 
   h1 {
     margin-bottom: 10px; /* espaço entre o título e o menu */
+    font-size: 30px;
   }
 
   h2 {
     padding-top: 53px;
+    font-size: 20px;
   }
 
   nav {
@@ -146,6 +148,10 @@ footer {
     font-size: 11px;
     margin-left: 3px;
   }
+
+  .menu-toggle {
+    color: #ff9800;
+  }
   main {
     padding-top: 0px;
     /*padding-top: 55px;*/
@@ -155,7 +161,7 @@ footer {
     /*padding-top: 4px;*/
   }
   footer {
-    padding: 40px
+    padding: 15px
     /*padding: 25px;*/
   }
 }
