@@ -4,10 +4,10 @@ const button = document.getElementById("toggleTheme");
   button.addEventListener("click", () => {
     if (html.getAttribute("data-theme") === "dark") {
       html.removeAttribute("data-theme");
-      button.textContent = "🌙";
+      button.textContent = "◐";
     } else {
       html.setAttribute("data-theme", "dark");
-      button.textContent = "☀️";
+      button.textContent = "◑";
     }
   });
 

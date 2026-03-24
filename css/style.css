@@ -68,12 +68,16 @@
 
 /* botão hamburguer escondido no desktop */
 .menu-toggle{
+  color: var(--text-color);
   display: none;
-  font-size: 28px;
-  color: #ff9800;
+  font-size: 26px;
+  /*color: #ff9800;*/
   background: none;
   border: none;
   cursor: pointer;
+}
+.menu-toggle:hover {
+  transform: scale(1.2);   /* efeito ao passar mouse */
 }
   .nav {
   /*display: flex;/* coloca os itens em linha */
@@ -87,6 +91,7 @@
 
   #toggleTheme {
   background: none;        /* tira fundo */
+  color: var(--text-color);
   gap: 5px;
   border: none;            /* tira borda */
   font-size: 26px;         /* aumenta tamanho */
@@ -96,7 +101,8 @@
 }
 
 #toggleTheme:hover {
-  transform: scale(1.2);   /* efeito ao passar mouse */
+  /*transform: scale(1.2);  efeito ao passar mouse */
+  transform: rotate(180deg); /* gira quando passa o mouse*/
 }
 
 #languageToggle {
